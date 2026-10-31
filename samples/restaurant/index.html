@@ -1,0 +1,55 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bayou Ember Kitchen — Cajun &amp; Southern (demo)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--r:#8c2f1b;--r2:#b5452a;--c:#f6efe3;--k:#2a1d17;--gr:#3f5a3c;--gold:#d9a441}
+*{box-sizing:border-box;margin:0}body{font-family:Lato,sans-serif;color:var(--k);background:var(--c);line-height:1.65}
+h1,h2,h3,.logo{font-family:"Playfair Display",serif}.w{max-width:1100px;margin:auto;padding:0 24px}a{color:inherit}
+header{position:absolute;top:0;left:0;right:0;z-index:5;color:var(--c)}header .w{display:flex;justify-content:space-between;align-items:center;height:84px}
+.logo{font-size:1.6rem;font-weight:800}.logo i{color:var(--gold)}nav a{margin-left:28px;text-decoration:none;font-weight:700;font-size:.92rem;letter-spacing:.08em;text-transform:uppercase}
+.hero{min-height:92vh;display:grid;place-items:center;text-align:center;color:var(--c);background:radial-gradient(ellipse at 50% 120%,rgba(217,164,65,.55),transparent 60%),radial-gradient(circle at 20% 20%,#5a1f12,transparent 50%),linear-gradient(160deg,#3a140c,#1d0f0a);position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cpath d='M40 10c6 10-6 14 0 24s14 6 10 18' fill='none' stroke='%23d9a441' stroke-opacity='.08' stroke-width='2'/%3E%3C/svg%3E")}
+.hero>div{position:relative;z-index:1}.hero small{letter-spacing:.3em;text-transform:uppercase;color:var(--gold);font-weight:700}
+.hero h1{font-size:clamp(3rem,8vw,6rem);line-height:1;margin:18px 0}.hero h1 em{color:var(--gold)}.hero p{font-size:1.2rem;max-width:40ch;margin:0 auto 36px;opacity:.85}
+.btn{display:inline-block;background:var(--r2);color:#fff;padding:15px 32px;border-radius:999px;text-decoration:none;font-weight:700;letter-spacing:.05em}.btn.g{background:none;border:2px solid var(--gold);color:var(--gold);margin-left:10px}
+section{padding:100px 0}.k{color:var(--r2);font-weight:700;letter-spacing:.25em;text-transform:uppercase;font-size:.78rem;text-align:center}
+h2{font-size:clamp(2.2rem,4.5vw,3.2rem);text-align:center;margin:8px 0 14px}.sub{text-align:center;max-width:52ch;margin:0 auto 54px;color:#6b5348}
+.tabs{display:grid;grid-template-columns:repeat(2,1fr);gap:50px 70px}.cat h3{font-size:1.6rem;color:var(--r);border-bottom:2px solid var(--gold);padding-bottom:8px;margin-bottom:18px}
+.it{display:flex;align-items:baseline;gap:10px;margin-bottom:16px}.it b{font-size:1.06rem}.it .dot{flex:1;border-bottom:1px dotted #b9a693}.it .p{font-weight:700;color:var(--r)}.it+p,.d{font-size:.92rem;color:#7a6255;margin:-12px 0 16px}
+.tag{font-size:.7rem;background:var(--gr);color:#fff;padding:2px 7px;border-radius:99px;vertical-align:middle;margin-left:6px}
+.ab{background:var(--k);color:#e9dccb}.ab .w{display:grid;grid-template-columns:1.1fr 1fr;gap:64px;align-items:center}.ab h2,.ab .k{text-align:left}.ab h2{color:var(--c)}
+.plates{display:grid;grid-template-columns:1fr 1fr;gap:16px}.plates div{aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,#c8662f 0 30%,#7c2c15 31% 42%,#efe6d8 43% 64%,#d8ccb9 65%);box-shadow:0 20px 40px rgba(0,0,0,.4)}
+.plates div:nth-child(2){background:radial-gradient(circle,#e3b04b 0 22%,#4d6b3d 23% 40%,#efe6d8 41% 64%,#d8ccb9 65%);transform:translateY(40px)}
+.plates div:nth-child(3){background:radial-gradient(circle,#a23a1f 0 36%,#efe6d8 37% 64%,#d8ccb9 65%)}.plates div:nth-child(4){background:radial-gradient(circle,#f0d9a4 0 28%,#9b3b1d 29% 38%,#efe6d8 39% 64%,#d8ccb9 65%);transform:translateY(40px)}
+.vi{display:grid;grid-template-columns:1fr 1fr 1fr;gap:28px}.box{background:#fff;border-radius:14px;padding:32px;box-shadow:0 6px 24px rgba(42,29,23,.07)}.box h3{color:var(--r);margin-bottom:12px;font-size:1.4rem}
+.hr{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid #eee}
+.map{border-radius:14px;min-height:260px;background:linear-gradient(135deg,#e8dccb,#d6c4ad);display:grid;place-items:center;text-align:center;color:#6b5348}.map b{font-size:2.4rem;display:block}
+footer{background:#1a110d;color:#b8a493;padding:36px 0;text-align:center;font-size:.9rem}footer .logo{color:var(--c);font-size:1.3rem;margin-bottom:6px}footer a{opacity:.75}
+@media(max-width:860px){nav{display:none}.tabs,.ab .w,.vi{grid-template-columns:1fr}.btn.g{margin:12px 0 0}}
+</style></head><body>
+<header><div class="w"><div class="logo">Bayou <i>Ember</i></div><nav><a href="#menu">Menu</a><a href="#about">Story</a><a href="#visit">Visit</a></nav></div></header>
+<main><section class="hero"><div class="w"><small>Cajun · Creole · Southern</small><h1>Slow-cooked soul, <em>bayou</em> style.</h1><p>Gumbo simmered all day, crawfish by the pound, and a porch-sized welcome.</p><a href="#visit" class="btn">Reserve a table</a><a href="#menu" class="btn g">See the menu</a></div></section>
+<section id="menu"><div class="w"><p class="k">Our menu</p><h2>From the kitchen</h2><p class="sub">Made from scratch daily with Gulf seafood and local produce. Menu and prices are sample content.</p>
+<div class="tabs">
+<div class="cat"><h3>Starters</h3>
+<div class="it"><b>Boudin Balls</b><span class="dot"></span><span class="p">$9</span></div><p class="d">Fried pork &amp; rice sausage, Creole mustard.</p>
+<div class="it"><b>Fried Green Tomatoes</b><span class="tag">V</span><span class="dot"></span><span class="p">$10</span></div><p class="d">Cornmeal crust, remoulade, pickled onion.</p>
+<div class="it"><b>Chargrilled Oysters</b><span class="dot"></span><span class="p">$16</span></div><p class="d">Garlic butter, parmesan, French bread.</p></div>
+<div class="cat"><h3>Big Plates</h3>
+<div class="it"><b>Chicken &amp; Andouille Gumbo</b><span class="dot"></span><span class="p">$18</span></div><p class="d">Dark roux, trinity, white rice.</p>
+<div class="it"><b>Crawfish Étouffée</b><span class="dot"></span><span class="p">$22</span></div><p class="d">Smothered crawfish tails, buttery sauce.</p>
+<div class="it"><b>Blackened Catfish</b><span class="dot"></span><span class="p">$21</span></div><p class="d">Dirty rice, collard greens, lemon.</p></div>
+<div class="cat"><h3>Sides</h3>
+<div class="it"><b>Red Beans &amp; Rice</b><span class="dot"></span><span class="p">$6</span></div><p class="d">Slow-simmered with smoked sausage.</p>
+<div class="it"><b>Mac &amp; Cheese</b><span class="tag">V</span><span class="dot"></span><span class="p">$7</span></div><p class="d">Three cheeses, crumb top.</p></div>
+<div class="cat"><h3>Sweets</h3>
+<div class="it"><b>Bread Pudding</b><span class="dot"></span><span class="p">$9</span></div><p class="d">Bourbon caramel sauce.</p>
+<div class="it"><b>Beignets</b><span class="dot"></span><span class="p">$8</span></div><p class="d">Powdered sugar, chicory café au lait.</p></div></div></div></section>
+<section class="ab" id="about"><div class="w"><div><p class="k">Our story</p><h2>Family recipes, open fire.</h2><p>Bayou Ember Kitchen started with a cast-iron pot and a grandmother's gumbo recipe. Today we cook the same way: low, slow, and with plenty of love — for neighbors, families, and anyone hungry for a taste of Louisiana.</p></div>
+<div class="plates" aria-hidden="true"><div></div><div></div><div></div><div></div></div></div></section>
+<section id="visit"><div class="w"><p class="k">Come on by</p><h2>Hours &amp; location</h2><p class="sub">Walk-ins welcome. Call ahead for parties of 6+.</p><div class="vi">
+<div class="box"><h3>Hours</h3><div class="hr"><span>Tue – Thu</span><b>11 – 9</b></div><div class="hr"><span>Fri – Sat</span><b>11 – 10</b></div><div class="hr"><span>Sunday brunch</span><b>10 – 3</b></div><div class="hr"><span>Monday</span><b>Closed</b></div></div>
+<div class="map" role="img" aria-label="Map placeholder"><div><b>📍</b>Map placeholder<br><small>456 Example Ave, Anytown</small></div></div>
+<div class="box"><h3>Reservations</h3><p>📞 (555) 010-7730<br>✉ hello@example.com</p><p style="margin:16px 0">Private dining and catering available.</p><a class="btn" href="tel:5550107730">Call to reserve</a></div></div></div></section></main>
+<footer><div class="logo">Bayou Ember Kitchen</div><p>© 2026 · Fictional restaurant · <a href="../../">Demo site by Stateline Web Designs</a></p></footer></body></html>

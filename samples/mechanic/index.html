@@ -1,0 +1,59 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pine Street Auto Repair — Honest auto repair (demo)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--y:#f5b301;--d:#14171c;--d2:#1f242c;--g:#9aa3ae}
+*{box-sizing:border-box;margin:0}body{font-family:Roboto,sans-serif;color:#222;line-height:1.6}
+h1,h2,h3,.logo{font-family:Oswald,sans-serif;text-transform:uppercase;letter-spacing:.02em}
+.w{max-width:1140px;margin:auto;padding:0 22px}a{color:inherit}
+.top{background:var(--y);color:var(--d);font-weight:500;font-size:.9rem;padding:8px 0}.top .w{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+header{background:var(--d);color:#fff;position:sticky;top:0;z-index:5}header .w{display:flex;justify-content:space-between;align-items:center;height:70px}
+.logo{font-size:1.5rem;font-weight:700}.logo b{color:var(--y)}nav a{margin-left:26px;text-decoration:none;color:#d6dbe1}nav a:hover{color:var(--y)}
+.btn{display:inline-block;background:var(--y);color:var(--d);font-family:Oswald;text-transform:uppercase;font-weight:700;padding:14px 28px;text-decoration:none;border-radius:4px;letter-spacing:.04em}
+.btn.o{background:none;color:#fff;border:2px solid #fff;margin-left:12px}
+.hero{background:linear-gradient(100deg,rgba(20,23,28,.96) 40%,rgba(20,23,28,.6)),repeating-linear-gradient(45deg,#232931 0 22px,#1b2027 22px 44px);color:#fff;padding:120px 0 130px;position:relative;overflow:hidden}
+.hero svg{position:absolute;right:-40px;bottom:-60px;width:520px;opacity:.13}
+.hero h1{font-size:clamp(2.6rem,6vw,4.6rem);line-height:1.02;max-width:12ch}.hero h1 span{color:var(--y)}
+.hero p{color:#c5ccd5;font-size:1.15rem;max-width:46ch;margin:22px 0 36px}
+.badges{display:flex;gap:34px;margin-top:56px;flex-wrap:wrap}.badges div{border-left:3px solid var(--y);padding-left:14px;color:#c5ccd5;font-size:.9rem}.badges b{display:block;color:#fff;font-family:Oswald;font-size:1.6rem}
+section{padding:96px 0}.k{color:#b07f00;font-weight:500;text-transform:uppercase;letter-spacing:.15em;font-size:.8rem}
+h2{font-size:clamp(2rem,4vw,2.8rem);margin:6px 0 40px;color:var(--d)}
+.sv{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.sv div{background:#f4f5f7;padding:30px;border-radius:6px;border-bottom:4px solid transparent;transition:.2s}.sv div:hover{border-color:var(--y);transform:translateY(-3px)}
+.sv i{display:grid;place-items:center;width:50px;height:50px;background:var(--d);color:var(--y);border-radius:6px;font-style:normal;font-size:1.4rem;margin-bottom:16px}.sv h3{font-size:1.2rem;color:var(--d);margin-bottom:6px}.sv p{color:#555}
+.ab{background:var(--d);color:#d6dbe1}.ab .w{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.ab h2{color:#fff}
+.ph{aspect-ratio:4/3;border-radius:6px;background:linear-gradient(135deg,#2b323c,#151a20);display:grid;place-items:center}.ph svg{width:55%;opacity:.9}
+.ab ul{list-style:none;padding:0;margin-top:22px}.ab li{padding:6px 0}.ab li:before{content:"✔ ";color:var(--y)}
+.hc{display:grid;grid-template-columns:1fr 1fr 1.2fr;gap:28px}.card{background:#f4f5f7;padding:30px;border-radius:6px}.card h3{color:var(--d);margin-bottom:12px}
+table{width:100%;border-collapse:collapse}td{padding:7px 0;border-bottom:1px solid #e1e4e8}td+td{text-align:right;font-weight:500}
+.map{min-height:240px;border-radius:6px;background:linear-gradient(#e8ebef 1px,transparent 1px) 0 0/28px 28px,linear-gradient(90deg,#e8ebef 1px,#f6f7f9 1px) 0 0/28px 28px;display:grid;place-items:center;color:#666;text-align:center;border:1px solid #e1e4e8}
+.map b{display:block;font-size:2rem;color:var(--y)}
+form{display:grid;gap:12px}input,select,textarea{font:inherit;padding:11px;border:1px solid #ccd;border-radius:4px}form .btn{border:0;cursor:pointer}
+footer{background:#0d0f13;color:var(--g);padding:34px 0;font-size:.9rem}footer .w{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}.demo{opacity:.7}
+@media(max-width:860px){nav{display:none}.sv,.hc,.ab .w{grid-template-columns:1fr}.btn.o{margin:12px 0 0}}
+</style></head><body>
+<div class="top"><div class="w"><span>🔧 Mon–Fri 7:30–6 · Sat 8–2</span><span>Call (555) 010-4821</span></div></div>
+<header><div class="w"><div class="logo">Pine Street <b>Auto</b></div><nav><a href="#services">Services</a><a href="#about">About</a><a href="#hours">Hours</a><a href="#contact" class="btn" style="padding:9px 18px">Book service</a></nav></div></header>
+<main>
+<section class="hero"><div class="w">
+<h1>Honest repairs. <span>Done right</span> the first time.</h1>
+<p>Family-owned auto repair for all makes and models. Straight answers, fair estimates, and no surprises on your bill.</p>
+<a href="#contact" class="btn">Schedule service</a><a href="tel:5550104821" class="btn o">(555) 010-4821</a>
+<div class="badges"><div><b>25+</b>years in business</div><div><b>ASE</b>certified techs</div><div><b>12k/12mo</b>parts &amp; labor warranty</div></div></div>
+<svg viewBox="0 0 100 100" fill="#fff" aria-hidden="true"><path d="M50 30a20 20 0 1 0 0 40 20 20 0 0 0 0-40zm0 28a8 8 0 1 1 0-16 8 8 0 0 1 0 16zM46 2h8l2 12 8 3 10-7 6 6-7 10 3 8 12 2v8l-12 2-3 8 7 10-6 6-10-7-8 3-2 12h-8l-2-12-8-3-10 7-6-6 7-10-3-8-12-2v-8l12-2 3-8-7-10 6-6 10 7 8-3z"/></svg></section>
+<section id="services"><div class="w"><p class="k">What we do</p><h2>Full-service auto care</h2><div class="sv">
+<div><i>🛢</i><h3>Oil &amp; fluids</h3><p>Conventional and synthetic oil changes, fluid flushes and top-offs.</p></div>
+<div><i>⛭</i><h3>Brakes</h3><p>Pads, rotors, calipers and brake-line service for safe stopping.</p></div>
+<div><i>⚙</i><h3>Engine diagnostics</h3><p>Check-engine light? We find the real problem and explain it plainly.</p></div>
+<div><i>❄</i><h3>A/C &amp; heating</h3><p>Recharge, leak detection and climate system repair.</p></div>
+<div><i>◎</i><h3>Tires &amp; alignment</h3><p>Mounting, balancing, rotation and computerized alignment.</p></div>
+<div><i>✓</i><h3>State inspections</h3><p>Fast, thorough inspections with no-pressure recommendations.</p></div></div></div></section>
+<section class="ab" id="about"><div class="w"><div class="ph"><svg viewBox="0 0 120 60" fill="none" stroke="#f5b301" stroke-width="3"><path d="M8 42h104M14 42l8-18h50l16 18M30 24l4-10h30l8 10"/><circle cx="32" cy="44" r="8" fill="#14171c"/><circle cx="90" cy="44" r="8" fill="#14171c"/></svg></div>
+<div><p class="k">About us</p><h2>Your neighborhood shop</h2><p>Pine Street Auto Repair has kept local families on the road for over two decades. We treat every car like our own and never recommend work you don't need.</p>
+<ul><li>Free multi-point inspection with every visit</li><li>Written estimates before any work begins</li><li>Courtesy shuttle and comfy waiting room</li></ul></div></div></section>
+<section id="hours"><div class="w"><p class="k">Visit us</p><h2>Hours &amp; contact</h2><div class="hc" id="contact">
+<div class="card"><h3>Shop hours</h3><table><tr><td>Mon – Fri</td><td>7:30 – 6:00</td></tr><tr><td>Saturday</td><td>8:00 – 2:00</td></tr><tr><td>Sunday</td><td>Closed</td></tr></table><p style="margin-top:16px">📞 (555) 010-4821<br>✉ service@example.com</p></div>
+<div class="map" role="img" aria-label="Map placeholder"><div><b>📍</b>Map placeholder<br><small>123 Example St, Anytown</small></div></div>
+<div class="card"><h3>Request an appointment</h3><form onsubmit="event.preventDefault();this.innerHTML='<p>Thanks! This is a demo form.</p>'"><input aria-label="Name" placeholder="Name" required><input aria-label="Phone" placeholder="Phone" required><select aria-label="Service"><option>Oil change</option><option>Brakes</option><option>Diagnostics</option><option>Other</option></select><button class="btn">Request</button></form></div></div></div></section>
+</main>
+<footer><div class="w"><span>© 2026 Pine Street Auto Repair (fictional business)</span><a class="demo" href="../../">Demo site by Stateline Web Designs</a></div></footer></body></html>
